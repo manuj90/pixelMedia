@@ -1,0 +1,85 @@
+/* General Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	color: black;
+	overflow-x: hidden;
+}
+
+ul li {
+	all: unset;
+}
+
+a {
+	text-decoration: none;
+}
+
+header,
+section,
+footer {
+	border: 0.5px solid red;
+}
+
+.toTop {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	text-decoration: none;
+}
+
+.toTop img {
+	width: 3rem;
+}
+
+.toTop:hover {
+	transform: scale(1.1);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1440px) {
+	body {
+		background-color: lightcoral;
+	}
+}
+
+/* Big Tablet Styles */
+@media only screen and (min-width: 901px) and (max-width: 1439px) {
+	body {
+		background-color: lightgreen;
+	}
+}
+
+/* Small Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+	body {
+		background-color: lightblue;
+	}
+}
+
+/* Mobile Style */
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+	body {
+		background-color: violet;
+	}
+}
+
+/* Galaxy Fold External Display Style */
+@media only screen and (min-width: 280px) and (max-width: 374px) {
+	body {
+		background-color: grey;
+	}
+}
+
+/* Edge 40 ultra External Display Style */
+@media only screen and (max-width: 279px) {
+	body {
+		background-color: lightgrey;
+	}
+}
