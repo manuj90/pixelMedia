@@ -15,10 +15,35 @@ a {
 	text-decoration: none;
 }
 
-header,
-section,
-footer {
-	border: 0.5px solid red;
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; /* Asegura que la navbar se extienda a lo largo de toda la página */
+	z-index: 1000;
+	display: flex;
+  padding: 3rem auto;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.511);
+	-webkit-backdrop-filter: blur(9.5px);
+	backdrop-filter: blur(9.5px);
+}
+
+nav img {
+	width: 5rem;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	display: block;
 }
 
 .toTop {
@@ -26,6 +51,7 @@ footer {
 	bottom: 2rem;
 	right: 2rem;
 	text-decoration: none;
+	z-index: 2;
 }
 
 .toTop img {
@@ -36,17 +62,53 @@ footer {
 	transform: scale(1.1);
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+#banner {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#hero-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+	opacity: 0.3;
+}
+
+.text-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	z-index: 1;
+}
+
+.text-content h1{
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.text-content p{
+  font-size: 2rem;
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1440px) {
-	body {
-		background-color: lightcoral;
-	}
 }
 
 /* Big Tablet Styles */
@@ -68,12 +130,50 @@ main{
 	body {
 		background-color: violet;
 	}
+
+	.text-content span {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.text-content span h1 {
+		font-size: 2rem;
+		color: thistle;
+	}
+
+	.text-content p {
+		width: 50%;
+		font-size: 1rem;
+	}
 }
 
 /* Galaxy Fold External Display Style */
 @media only screen and (min-width: 280px) and (max-width: 374px) {
 	body {
 		background-color: grey;
+	}
+
+	#banner img {
+		display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+	}
+
+	.text-content span {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.text-content span h1 {
+		font-size: 2rem;
+		color: thistle;
+	}
+
+	.text-content p {
+		width: 50%;
+		font-size: 1rem;
 	}
 }
 

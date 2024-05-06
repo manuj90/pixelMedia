@@ -20,11 +20,12 @@
 			<nav>
 				<a href="./index.html" id="top">
 					<picture>
-						<source srcset="./assets/logo/logo.webp" />
-						<img src="/assets/logo/logo.webp" alt="PixelMedia Logo" />
+						<source srcset="./assets/logo/logo.webp" type="image/webp" />
+						<img src="./assets/logo/logo.png" alt="PixelMedia Logo" />
+						<!-- Asegúrate de tener un fallback en PNG -->
 					</picture>
 				</a>
-				<ul>
+				<ul id="menu-items">
 					<li><a href="#nosotros">Nosotros</a></li>
 					<li><a href="#servicios">Servicios</a></li>
 					<li><a href="#clientes">Clientes</a></li>
@@ -40,12 +41,19 @@
 
 		<main>
 			<section id="banner">
-				<h1>Bienvenidos a Pixel Media</h1>
-				<p>
-					Somos una Agencia de Diseño Multimedial que se especializa en brindar
-					un servicio integral de Diseño y Comunicación Audiovisual,
-					especializada en marketing digital, diseño gráfico, web y multimedia.
-				</p>
+				<video autoplay muted loop id="hero-video">
+					<source src="./assets/images/banner/baner.mp4" type="video/mp4" />
+					<img src="/assets/images/banner/banner.jpg" alt="banner" />
+				</video>
+				<div class="text-content">
+					<h1>Bienvenidos a Pixel Media</h1>
+					<p>
+						Somos una Agencia de Diseño Multimedial que se especializa en
+						brindar un servicio integral de Diseño y Comunicación Audiovisual,
+						especializada en marketing digital, diseño gráfico, web y
+						multimedia.
+					</p>
+				</div>
 			</section>
 
 			<section id="nosotros">
