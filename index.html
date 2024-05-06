@@ -43,8 +43,8 @@
 			<section id="banner">
 				<video autoplay muted loop id="hero-video">
 					<source src="./assets/images/banner/banner.mp4" type="video/mp4" />
-			
 				</video>
+
 				<div class="text-content">
 					<h1>Bienvenidos a Pixel Media</h1>
 					<p>
@@ -56,7 +56,7 @@
 				</div>
 			</section>
 
-			<section id="nosotros">
+			<section id="nosotros" class="container">
 				<h1>Nosotros</h1>
 
 				<p>
@@ -100,11 +100,21 @@
 				</p>
 			</section>
 
-			<section id="servicios">
+			<section id="servicios" class="container">
 				<h1>Servicios</h1>
 				<div>
 					<div id="animation">
-						<picture></picture>
+						<picture>
+							<source
+								srcset="./assets/images/services/animation.avif"
+								type="image/avif" />
+							<source
+								srcset="./assets/images/services/animation.webp"
+								type="image/webp" />
+							<img
+								src="./assets/images/services/animation.png"
+								alt="Animation" />
+						</picture>
 						<h2>Animación</h2>
 						<p>
 							Da vida a tus ideas con animaciones cautivadoras. Desde GIFs hasta
@@ -114,7 +124,17 @@
 						</p>
 					</div>
 					<div id="graphicDesign">
-						<picture></picture>
+						<picture>
+							<source
+								srcset="./assets/images/services/graphicDesign.avif"
+								type="image/avif" />
+							<source
+								srcset="./assets/images/services/graphicDesign.webp"
+								type="image/webp" />
+							<img
+								src="./assets/images/services/graphicDesign.png"
+								alt="Graphic Design" />
+						</picture>
 						<h2>Diseño gráfico</h2>
 						<p>
 							Crea impacto visual con nuestros servicios de diseño gráfico.
@@ -124,7 +144,17 @@
 						</p>
 					</div>
 					<div id="audioAndVideo">
-						<picture></picture>
+						<picture>
+							<source
+								srcset="./assets/images/services/video.avif"
+								type="image/avif" />
+							<source
+								srcset="./assets/images/services/video.webp"
+								type="image/webp" />
+							<img
+								src="./assets/images/services/video.png"
+								alt="Audio and Video" />
+						</picture>
 						<h2>Audio y video</h2>
 						<p>
 							Producción audiovisual de alta calidad para todos tus proyectos.
@@ -134,7 +164,17 @@
 						</p>
 					</div>
 					<div id="webDesign">
-						<picture></picture>
+						<picture>
+							<source
+								srcset="./assets/images/services/webDesign.avif"
+								type="image/avif" />
+							<source
+								srcset="./assets/images/services/webDesign.webp"
+								type="image/webp" />
+							<img
+								src="./assets/images/services/webDesign.png"
+								alt="Web Desing" />
+						</picture>
 						<h2>Diseño web</h2>
 						<p>
 							Diseñamos sitios web que no solo se ven bien, sino que funcionan
@@ -144,7 +184,17 @@
 						</p>
 					</div>
 					<div id="socialMedia">
-						<picture></picture>
+						<picture>
+							<source
+								srcset="./assets/images/services/socialMedia.avif"
+								type="image/avif" />
+							<source
+								srcset="./assets/images/services/socialMedia.webp"
+								type="image/webp" />
+							<img
+								src="./assets/images/services/socialMedia.png"
+								alt="Social Media" />
+						</picture>
 						<h2>Redes Sociales</h2>
 						<p>
 							Amplifica tu presencia online con estrategias de redes sociales
@@ -154,8 +204,16 @@
 						</p>
 					</div>
 					<div id="SEO">
-						<picture></picture>
-						<h2>Posicionamiento web</h2>
+						<picture>
+							<source
+								srcset="./assets/images/services/SEO.avif"
+								type="image/avif" />
+							<source
+								srcset="./assets/images/services/SEO.webp"
+								type="image/webp" />
+							<img src="./assets/images/services/SEO.png" alt="SEO" />
+						</picture>
+						<h2>Posicionamiento</h2>
 						<p>
 							Mejora tu visibilidad en línea con nuestras técnicas avanzadas de
 							posicionamiento web (SEO). Aumentamos el tráfico orgánico de tu
@@ -166,10 +224,9 @@
 				</div>
 			</section>
 
-			<section id="clientes">
+			<section id="clientes" class="container">
 				<h1>Clientes</h1>
 				<div id="clientLogos">
-					<h2>Logo de Clientes</h2>
 					<img src="./assets/images/client1.png" alt="Client 1" />
 					<img src="./assets/images/client2.png" alt="Client 2" />
 					<img src="./assets/images/client3.png" alt="Client 3" />
@@ -241,7 +298,7 @@
 				</div>
 			</section>
 
-			<section id="portfolio">portfolio</section>
+			<section id="portfolio" class="container">portfolio</section>
 
 			<section id="contacto">
 				<h1>Contacto</h1>
@@ -266,7 +323,7 @@
 		</main>
 
 		<footer>
-			<footer>
+			<div class="container">
 				<div class="footer-section">
 					<h2>Secciones</h2>
 					<ul>
@@ -295,7 +352,7 @@
 				<div class="footer-section">
 					<p>Creado por: Nombre Apellido</p>
 				</div>
-			</footer>
+			</div>
 		</footer>
 	</body>
 </html>
