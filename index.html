@@ -16,9 +16,9 @@
 		<title>PixelMedia</title>
 	</head>
 	<body>
-		<header>
+		<header id="top">
 			<nav>
-				<a href="./index.html" id="top">
+				<a href="./index.html">
 					<picture>
 						<source srcset="./assets/logo/logo.webp" type="image/webp" />
 						<img src="./assets/logo/logo.png" alt="PixelMedia Logo" />
@@ -36,8 +36,10 @@
 		</header>
 
 		<a href="#top" class="toTop" title="ir al principio">
-			<img src="./assets/images/arrowUp/arrowUp.png" alt="up arrow"
-		/></a>
+			<button>
+				<img src="./assets/images/arrowUp/arrowUp.png" alt="up arrow" />
+			</button>
+		</a>
 
 		<main>
 			<section id="banner">
@@ -226,17 +228,94 @@
 
 			<section id="clientes" class="container">
 				<h1>Clientes</h1>
+
 				<div id="clientLogos">
-					<img src="./assets/images/client1.png" alt="Client 1" />
-					<img src="./assets/images/client2.png" alt="Client 2" />
-					<img src="./assets/images/client3.png" alt="Client 3" />
+					<picture>
+						<source
+							srcset="./assets/images/clients/BBVA.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/BBVA.webp"
+							type="image/webp" />
+						<img src="./assets/images/clients/BBVA.jpg" alt="BBVA" />
+					</picture>
+					<picture>
+						<source
+							srcset="./assets/images/clients/BODEGAS MI TERRUÑO.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/BODEGAS MI TERRUÑO.webp"
+							type="image/webp" />
+						<img
+							src="./assets/images/clients/BODEGAS MI TERRUÑO.jpg"
+							alt="Bodegas Mi Terruño" />
+					</picture>
+					<picture>
+						<source
+							srcset="./assets/images/clients/LA CABRERA.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/LA CABRERA.webp"
+							type="image/webp" />
+						<img
+							src="./assets/images/clients/LA CABRERA.jpg"
+							alt="La Cabrera" />
+					</picture>
+					<picture>
+						<source
+							srcset="./assets/images/clients/LA NACION.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/LA NACION.webp"
+							type="image/webp" />
+						<img src="./assets/images/clients/LA NACION.jpg" alt="" />
+					</picture>
+					<picture>
+						<source
+							srcset="./assets/images/clients/BODEGAS MIMO.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/BODEGAS MIMO.webp"
+							type="image/webp" />
+						<img src="./assets/images/clients/MIMO.jpg" alt="Mimo" />
+					</picture>
+					<picture>
+						<source
+							srcset="./assets/images/clients/NATIER.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/NATIER.webp"
+							type="image/webp" />
+						<img src="./assets/images/clients/NATIER.jpg" alt="Natier" />
+					</picture>
+					<picture>
+						<source
+							srcset="./assets/images/clients/VITALCER.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/VITALCER.webp"
+							type="image/webp" />
+						<img src="./assets/images/clients/VITALCER.jpg" alt="Vitalcer" />
+					</picture>
+					<picture>
+						<source
+							srcset="./assets/images/clients/VZ LIVE SIMPLE.avif"
+							type="image/avif" />
+						<source
+							srcset="./assets/images/clients/VZ LIVE SIMPLE.webp"
+							type="image/webp" />
+						<img
+							src="./assets/images/clients/VZ LIVE SIMPLE.jpg"
+							alt="VZ Live Simple" />
+					</picture>
 				</div>
+
 				<div id="testimonials">
 					<h2>Testimonios</h2>
 					<div class="testimonial">
-						<img src="./assets/images/avatar1.png" alt="Avatar 1" />
+						<img src="./assets/images/testimonies/PFPone.png" alt="Avatar1" />
 						<p>
-							"Llevamos 3 años trabajando con XXXXX para la creación y
+							"Llevamos 3 años trabajando con Pixel Media para la creación y
 							adaptación de piezas gráficas y digitales. Destaco su seriedad
 							para el trabajo de un brief, sus propuestas creativas y el
 							cumplimiento de los tiempos acordados. Han dado mucho valor a
@@ -246,19 +325,19 @@
 						<p>- Martín Chebli, Gerente de comunicación de Mimo & Co</p>
 					</div>
 					<div class="testimonial">
-						<img src="./assets/images/avatar2.png" alt="Avatar 2" />
+						<img src="./assets/images/avatar/" alt="Avatar2" />
 						<p>
-							"Hace un tiempo que trabajamos con la agencia XXXXX. Ellos
+							"Hace un tiempo que trabajamos con la agencia Pixel Media. Ellos
 							diseñaron nuestro sitio web, e-commerce e innumerables piezas
 							gráficas a lo largo de estos años. Siempre demostraron
 							profesionalismo, conocimiento y en especial, mucho compromiso.
 							Hace mucho tiempo trabajamos con ellos y es como si nos
 							sintiéramos parte del mismo equipo.”
 						</p>
-						<p>- arolina Henning, Directora de RRHH de Natier Argentina</p>
+						<p>- Carolina Henning, Directora de RRHH de Natier Argentina</p>
 					</div>
 					<div class="testimonial">
-						<img src="./assets/images/avatar2.png" alt="Avatar 2" />
+						<img src="./assets/images/avatar/" alt="Avatar3" />
 						<p>
 							"La agencia de diseño multimedia superó mis expectativas. Su
 							creatividad y atención al detalle hicieron que mi sitio web se
@@ -269,7 +348,7 @@
 						</p>
 					</div>
 					<div class="testimonial">
-						<img src="./assets/images/avatar2.png" alt="Avatar 2" />
+						<img src="./assets/images/avatar/" alt="Avatar4" />
 						<p>
 							"Gracias a la agencia, mi marca ahora tiene una identidad visual
 							sólida. El diseño de mi logotipo y el material gráfico son
@@ -278,7 +357,7 @@
 						<p>- Carlos Gómez Centurión, CEO de Bodegas Mi Terruño</p>
 					</div>
 					<div class="testimonial">
-						<img src="./assets/images/avatar2.png" alt="Avatar 2" />
+						<img src="./assets/images/avatar/" alt="Avatar5" />
 						<p>
 							"El equipo de animación y motion graphics creó un video
 							promocional increíble para el banco. Capturaron la esencia de
@@ -287,7 +366,7 @@
 						<p>- María Laura Fernández, Gerente de RRHH de BBVA</p>
 					</div>
 					<div class="testimonial">
-						<img src="./assets/images/avatar2.png" alt="Avatar 2" />
+						<img src="./assets/images/avatar/" alt="Avatar6" />
 						<p>
 							"El posicionamiento web que lograron para mi negocio fue
 							impresionante. Ahora estamos en los primeros resultados de
@@ -300,7 +379,7 @@
 
 			<section id="portfolio" class="container">portfolio</section>
 
-			<section id="contacto">
+			<section id="contacto" class="container">
 				<h1>Contacto</h1>
 				<form action="/submit-form" method="POST">
 					<div>
@@ -350,7 +429,7 @@
 					<p>&copy; 2024 PixelMedia. Todos los derechos reservados.</p>
 				</div>
 				<div class="footer-section">
-					<p>Creado por: Nombre Apellido</p>
+					<p>Creado por: Perotti Cecilia, Scagni Juan Manuel</p>
 				</div>
 			</div>
 		</footer>

@@ -56,6 +56,14 @@ li a {
 	z-index: 2;
 }
 
+.toTop button {
+	background: rgba(255, 186, 88, 0.153);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .toTop img {
 	width: 3rem;
 }
@@ -172,11 +180,12 @@ main {
 	font-size: 3rem;
 }
 
-#clienteLogos {
+#clientLogos {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 2rem;
+	margin-bottom: 2rem;
 }
 
 #portfolio h1 {
@@ -184,21 +193,132 @@ main {
 	font-size: 3rem;
 }
 
+#testimonials h2 {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.testimonial {
+	display: flex;
+	flex-direction: row; /* Horizontal por defecto */
+	align-items: center; /* Alinea verticalmente los elementos en el centro */
+	gap: 20px; /* Espacio entre la imagen y el texto */
+	padding: 20px;
+	background-color: #f8f8f8;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+}
+
+.testimonial img {
+	border-radius: 50%; /* Hace la imagen circular */
+	object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+}
+
+.testimonial-text p {
+	margin: 0; /* Elimina los márgenes predeterminados de los párrafos */
+	color: #555; /* Color de texto más suave */
+}
+
 #contacto h1 {
 	text-align: center;
 	font-size: 3rem;
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 1440px) {
+#contacto {
+	background-color: #faab36;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	margin: auto;
 }
 
-/* Big Tablet Styles */
-@media only screen and (min-width: 901px) and (max-width: 1439px) {
+#contacto h1 {
+	text-align: center;
+	color: #333;
 }
 
-/* Small Tablet Styles */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+#contacto form > div {
+	margin-bottom: 15px;
+}
+
+#contacto label {
+	display: block;
+	margin-bottom: 5px;
+	color: #666;
+}
+
+#contacto input,
+#contacto textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#contacto button {
+	background-color: #249ea0;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+}
+
+#contacto button:hover {
+	background-color: #005f60;
+}
+
+footer {
+	margin-top: 3rem;
+	background-color: #fd5901; /* Fondo oscuro para el footer */
+	color: #fff; /* Texto blanco para contraste */
+	padding: 20px 0; /* Espaciado vertical */
+	font-size: 14px; /* Tamaño de fuente general */
+}
+
+.footer-section {
+	margin-bottom: 20px; /* Espaciado entre secciones */
+}
+
+footer h2 {
+	font-size: 16px; /* Tamaño más grande para títulos de sección */
+	margin-bottom: 10px; /* Espaciado después del título */
+}
+
+footer ul {
+	list-style: none; /* Eliminar viñetas */
+	padding: 0; /* Eliminar padding predeterminado */
+}
+
+footer li {
+	margin-bottom: 5px; /* Espaciado entre elementos de lista */
+}
+
+footer a {
+	color: #fff; /* Mantener los enlaces blancos */
+	text-decoration: none; /* Sin subrayado */
+	transition: color 0.3s; /* Transición suave para el color */
+}
+
+footer a:hover {
+	color: #ccc; /* Cambio de color al pasar el mouse */
+}
+
+footer .container {
+	width: 90%; /* Ancho del contenedor */
+	max-width: 1200px; /* Máximo ancho del contenedor */
+	margin: 0 auto; /* Centrar contenedor */
+	display: flex; /* Usar flexbox para alinear secciones */
+	flex-wrap: wrap; /* Permite el salto de línea en elementos flex */
+	justify-content: space-between; /* Espaciado entre secciones */
+}
+
+.footer-section p {
+	margin: 0; /* Eliminar margen predeterminado */
 }
 
 /* Mobile Style */
@@ -211,6 +331,43 @@ main {
 	.text-content p {
 		font-size: 1.5rem;
 	}
+
+	#clientLogos img {
+		width: 90vw;
+		max-width: 280px;
+	}
+
+	.testimonial {
+		flex-direction: column; /* Cambia a vertical en dispositivos móviles */
+	}
+
+	.testimonial img {
+		align-self: center; /* Centra la imagen horizontalmente en móviles */
+	}
+
+	#contacto {
+		padding: 20px;
+	}
+
+	#contacto input,
+	#contacto textarea {
+		font-size: 16px;
+	}
+
+	.testimonial img {
+		width: 10rem;
+		border-radius: 50%; /* Hace la imagen circular */
+		object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+	}
+
+	footer .container {
+		flex-direction: column; /* Columna en pantallas pequeñas */
+	}
+
+	.footer-section {
+		text-align: center; /* Centrar texto en pantallas pequeñas */
+		margin-bottom: 10px; /* Reducir margen entre secciones */
+	}
 }
 
 /* Galaxy Fold External Display Style */
@@ -222,5 +379,37 @@ main {
 
 	.text-content p {
 		font-size: 1.5rem;
+	}
+
+	.testimonial {
+	display: flex;
+	flex-direction: column; /* Horizontal por defecto */
+	align-items: center; /* Alinea verticalmente los elementos en el centro */
+	gap: 20px; /* Espacio entre la imagen y el texto */
+	padding: 20px;
+	background-color: #f8f8f8;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+}
+
+	.testimonial img {
+		width: 5rem;
+		border-radius: 50%; /* Hace la imagen circular */
+		object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+	}
+
+	#clientLogos img {
+		width: 50vw;
+		max-width: 300px;
+	}
+
+	#contacto {
+		padding: 15px;
+	}
+
+	#contacto input,
+	#contacto textarea {
+		font-size: 14px;
 	}
 }
