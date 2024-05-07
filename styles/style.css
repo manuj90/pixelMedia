@@ -202,7 +202,7 @@ main {
 	display: flex;
 	flex-direction: row; /* Horizontal por defecto */
 	align-items: center; /* Alinea verticalmente los elementos en el centro */
-	gap: 20px; /* Espacio entre la imagen y el texto */
+	gap: 3rem; /* Espacio entre la imagen y el texto */
 	padding: 20px;
 	background-color: #f8f8f8;
 	border-radius: 8px;
@@ -382,16 +382,16 @@ footer .container {
 	}
 
 	.testimonial {
-	display: flex;
-	flex-direction: column; /* Horizontal por defecto */
-	align-items: center; /* Alinea verticalmente los elementos en el centro */
-	gap: 20px; /* Espacio entre la imagen y el texto */
-	padding: 20px;
-	background-color: #f8f8f8;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	margin: 20px;
-}
+		display: flex;
+		flex-direction: column; /* Horizontal por defecto */
+		align-items: center; /* Alinea verticalmente los elementos en el centro */
+		gap: 20px; /* Espacio entre la imagen y el texto */
+		padding: 20px;
+		background-color: #f8f8f8;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin: 20px;
+	}
 
 	.testimonial img {
 		width: 5rem;
