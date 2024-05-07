@@ -199,25 +199,55 @@ main {
 }
 
 .testimonial {
-	display: flex;
-	flex-direction: row; /* Horizontal por defecto */
-	align-items: center; /* Alinea verticalmente los elementos en el centro */
-	gap: 3rem; /* Espacio entre la imagen y el texto */
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
 	padding: 20px;
-	background-color: #f8f8f8;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	margin: 20px;
+	background: rgba(245, 166, 35, 0.25);
+	backdrop-filter: blur(16.5px);
+	-webkit-backdrop-filter: blur(16.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.testimonial img {
-	border-radius: 50%; /* Hace la imagen circular */
-	object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+.testimonial-text {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-left: 20px;
 }
 
-.testimonial-text p {
-	margin: 0; /* Elimina los márgenes predeterminados de los párrafos */
-	color: #555; /* Color de texto más suave */
+.testimonial-text p:first-child {
+	flex: 1;
+}
+
+.testimonial-text p:last-child {
+	text-align: right;
+}
+
+picture img {
+	max-width: 200px;
+	border-radius: 50%;
+}
+
+#portfolio h1 {
+	text-align: center;
+	font-size: 3rem;
+}
+
+#portfolio h3 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+div.portfolioImgs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #contacto h1 {
@@ -274,51 +304,51 @@ main {
 
 footer {
 	margin-top: 3rem;
-	background-color: #fd5901; /* Fondo oscuro para el footer */
-	color: #fff; /* Texto blanco para contraste */
-	padding: 20px 0; /* Espaciado vertical */
-	font-size: 14px; /* Tamaño de fuente general */
+	background-color: #fd5901;
+	color: #fff;
+	padding: 20px 0;
+	font-size: 14px;
 }
 
 .footer-section {
-	margin-bottom: 20px; /* Espaciado entre secciones */
+	margin-bottom: 20px;
 }
 
 footer h2 {
-	font-size: 16px; /* Tamaño más grande para títulos de sección */
-	margin-bottom: 10px; /* Espaciado después del título */
+	font-size: 16px;
+	margin-bottom: 10px;
 }
 
 footer ul {
-	list-style: none; /* Eliminar viñetas */
-	padding: 0; /* Eliminar padding predeterminado */
+	list-style: none;
+	padding: 0;
 }
 
 footer li {
-	margin-bottom: 5px; /* Espaciado entre elementos de lista */
+	margin-bottom: 5px;
 }
 
 footer a {
-	color: #fff; /* Mantener los enlaces blancos */
-	text-decoration: none; /* Sin subrayado */
-	transition: color 0.3s; /* Transición suave para el color */
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s;
 }
 
 footer a:hover {
-	color: #ccc; /* Cambio de color al pasar el mouse */
+	color: #ccc;
 }
 
 footer .container {
-	width: 90%; /* Ancho del contenedor */
-	max-width: 1200px; /* Máximo ancho del contenedor */
-	margin: 0 auto; /* Centrar contenedor */
-	display: flex; /* Usar flexbox para alinear secciones */
-	flex-wrap: wrap; /* Permite el salto de línea en elementos flex */
-	justify-content: space-between; /* Espaciado entre secciones */
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .footer-section p {
-	margin: 0; /* Eliminar margen predeterminado */
+	margin: 0;
 }
 
 /* Mobile Style */
@@ -338,11 +368,28 @@ footer .container {
 	}
 
 	.testimonial {
-		flex-direction: column; /* Cambia a vertical en dispositivos móviles */
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		padding: 20px;
+		margin: 20px;
+		background: rgba(245, 166, 35, 0.25);
+		backdrop-filter: blur(16.5px);
+		-webkit-backdrop-filter: blur(16.5px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
 	}
 
 	.testimonial img {
-		align-self: center; /* Centra la imagen horizontalmente en móviles */
+		align-self: center;
+	}
+
+	.portfolioImgs {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 
 	#contacto {
@@ -356,17 +403,17 @@ footer .container {
 
 	.testimonial img {
 		width: 10rem;
-		border-radius: 50%; /* Hace la imagen circular */
-		object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+		border-radius: 50%;
+		object-fit: cover;
 	}
 
 	footer .container {
-		flex-direction: column; /* Columna en pantallas pequeñas */
+		flex-direction: column;
 	}
 
 	.footer-section {
-		text-align: center; /* Centrar texto en pantallas pequeñas */
-		margin-bottom: 10px; /* Reducir margen entre secciones */
+		text-align: center;
+		margin-bottom: 10px;
 	}
 }
 
@@ -383,25 +430,35 @@ footer .container {
 
 	.testimonial {
 		display: flex;
-		flex-direction: column; /* Horizontal por defecto */
-		align-items: center; /* Alinea verticalmente los elementos en el centro */
-		gap: 20px; /* Espacio entre la imagen y el texto */
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
 		padding: 20px;
-		background-color: #f8f8f8;
-		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		margin: 20px;
+		background: rgba(245, 166, 35, 0.25);
+		backdrop-filter: blur(16.5px);
+		-webkit-backdrop-filter: blur(16.5px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
 	}
 
 	.testimonial img {
 		width: 5rem;
-		border-radius: 50%; /* Hace la imagen circular */
-		object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+		border-radius: 50%;
+		object-fit: cover;
 	}
 
 	#clientLogos img {
 		width: 50vw;
 		max-width: 300px;
+	}
+
+	.portfolioImgs {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 
 	#contacto {
