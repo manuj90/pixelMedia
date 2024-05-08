@@ -54,10 +54,11 @@ li a {
 	right: 2rem;
 	text-decoration: none;
 	z-index: 2;
+	transition: all 0.3s ease-in-out;
 }
 
 .toTop button {
-	background: rgba(255, 186, 88, 0.153);
+	background: rgba(37, 37, 37, 0.153);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(7px);
 	-webkit-backdrop-filter: blur(7px);
@@ -186,50 +187,62 @@ main {
 	justify-content: space-around;
 	gap: 2rem;
 	margin-bottom: 2rem;
+	transition: all 0.3s ease-in-out;
+}
+
+#clientLogos img {
+	transition: all 0.3s ease-in-out;
+}
+
+#clientLogos img:hover {
+	transform: scale(1.1);
+}
+
+#testimonials {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	background: rgba(122, 122, 122, 0.2);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 3rem;
+	border: 1px solid rgba(28, 28, 28, 0.18);
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.card > p {
+	width: 70%;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.testimonial img {
+	width: 10rem;
+	margin: 2rem;
+	border-radius: 50%;
+	border: #faab36 0.2rem solid;
+}
+
+.testimonial > p:last-child {
+	align-self: self-end;
+	text-align: right;
+	padding: 2rem;
 }
 
 #portfolio h1 {
 	text-align: center;
 	font-size: 3rem;
-}
-
-#testimonials h2 {
-	text-align: center;
-	font-size: 3rem;
-}
-
-.testimonial {
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	text-align: left;
-	padding: 20px;
-	margin: 20px;
-	background: rgba(245, 166, 35, 0.25);
-	backdrop-filter: blur(16.5px);
-	-webkit-backdrop-filter: blur(16.5px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.testimonial-text {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	margin-left: 20px;
-}
-
-.testimonial-text p:first-child {
-	flex: 1;
-}
-
-.testimonial-text p:last-child {
-	text-align: right;
-}
-
-picture img {
-	max-width: 200px;
-	border-radius: 50%;
 }
 
 #portfolio h1 {
@@ -240,6 +253,7 @@ picture img {
 #portfolio h3 {
 	text-align: center;
 	font-size: 2rem;
+	margin-bottom: 2rem;
 }
 
 div.portfolioImgs {
@@ -248,6 +262,17 @@ div.portfolioImgs {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	gap: 1rem;
+}
+
+.portfolioImgs img {
+	width: 30rem;
+	border-radius: 0.4rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.portfolioImgs img:hover {
+	transform: scale(1.1);
 }
 
 #contacto h1 {
@@ -303,56 +328,44 @@ div.portfolioImgs {
 }
 
 footer {
-	margin-top: 3rem;
-	background-color: #fd5901;
-	color: #fff;
-	padding: 20px 0;
-	font-size: 14px;
-}
-
-.footer-section {
-	margin-bottom: 20px;
-}
-
-footer h2 {
-	font-size: 16px;
-	margin-bottom: 10px;
-}
-
-footer ul {
-	list-style: none;
-	padding: 0;
-}
-
-footer li {
-	margin-bottom: 5px;
-}
-
-footer a {
-	color: #fff;
-	text-decoration: none;
-	transition: color 0.3s;
-}
-
-footer a:hover {
-	color: #ccc;
-}
-
-footer .container {
-	width: 90%;
-	max-width: 1200px;
-	margin: 0 auto;
+	background-color: #FAAB36;
+	color: white;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
+	padding-top: 2rem;
+	margin-top: 2rem;
 }
 
-.footer-section p {
-	margin: 0;
+.footerfrst {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+footer .copy {
+	background-color: #f78104;
+	width: 100vw;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+footer .author {
+	width: 100vw;
+	text-align: center;
+	padding: 1rem 0;
+	background-color: #fd5901;
+}
+
+.footerUL img{
+	width: 3rem;
 }
 
 /* Mobile Style */
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+@media only screen and (min-width: 375px) and (max-width: 1038px) {
 	.text-content h1 {
 		font-size: 3rem;
 		margin-bottom: 2rem;
@@ -367,29 +380,23 @@ footer .container {
 		max-width: 280px;
 	}
 
-	.testimonial {
+	.card {
+		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
 		align-items: center;
-		gap: 20px;
-		padding: 20px;
-		margin: 20px;
-		background: rgba(245, 166, 35, 0.25);
-		backdrop-filter: blur(16.5px);
-		-webkit-backdrop-filter: blur(16.5px);
-		border-radius: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.18);
 	}
 
-	.testimonial img {
-		align-self: center;
-	}
-
-	.portfolioImgs {
+	div.portfolioImgs {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+	}
+	.portfolioImgs img {
+		width: 90vw;
+		max-width: 300px;
 	}
 
 	#contacto {
@@ -411,9 +418,9 @@ footer .container {
 		flex-direction: column;
 	}
 
-	.footer-section {
-		text-align: center;
-		margin-bottom: 10px;
+	.footerUL {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -428,36 +435,28 @@ footer .container {
 		font-size: 1.5rem;
 	}
 
-	.testimonial {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 20px;
-		padding: 20px;
-		margin: 20px;
-		background: rgba(245, 166, 35, 0.25);
-		backdrop-filter: blur(16.5px);
-		-webkit-backdrop-filter: blur(16.5px);
-		border-radius: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.18);
-	}
-
-	.testimonial img {
-		width: 5rem;
-		border-radius: 50%;
-		object-fit: cover;
-	}
-
 	#clientLogos img {
 		width: 50vw;
 		max-width: 300px;
 	}
 
-	.portfolioImgs {
+	div.portfolioImgs {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
+	}
+
+	.portfolioImgs img {
+		width: 50vw;
+		max-width: 300px;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 		align-items: center;
 	}
 
@@ -468,5 +467,10 @@ footer .container {
 	#contacto input,
 	#contacto textarea {
 		font-size: 14px;
+	}
+
+	.footerUL {
+		display: flex;
+		flex-direction: column;
 	}
 }
