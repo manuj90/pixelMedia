@@ -8,6 +8,13 @@
 	font-size: 1rem;
 }
 
+main {
+	background-image: url('/assets/images/FONDO.png');
+	background-repeat: repeat;
+	background-size: 60rem;
+	background-position: center center;
+}
+
 ul li {
 	all: unset;
 }
@@ -23,6 +30,7 @@ nav {
 	width: 100%; /* Asegura que la navbar se extienda a lo largo de toda la página */
 	z-index: 1000;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	background: rgba(255, 255, 255, 0.511);
@@ -80,6 +88,24 @@ main {
 	gap: 1.5rem;
 }
 
+#menu-items {
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.text-content h1 {
+	font-family: 'aptly-rough', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.text-content p {
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 #banner {
 	position: relative;
 	width: 100vw;
@@ -128,22 +154,37 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	background-color: #f78104;
+	width: 100%;
+	padding: 3rem 0;
 }
 
 #nosotros h1 {
 	text-align: center;
 	font-size: 3rem;
+	margin-bottom: 2rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
-#nostros p {
-	width: 80%;
-	margin: 0 auto;
+.us_paragraph {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: center;
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 #servicios h1 {
 	text-align: center;
 	font-size: 3rem;
 	margin-bottom: 3rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 #servicios div {
@@ -155,13 +196,17 @@ main {
 
 #servicios div > div {
 	width: 200px;
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 2rem;
+	background: rgba(255, 160, 160, 0.3);
+	box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.37);
+	backdrop-filter: blur(7.5px);
+	-webkit-backdrop-filter: blur(7.5px);
 	border-radius: 1.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #servicios div > div img {
@@ -171,15 +216,30 @@ main {
 #servicios div > div h2 {
 	font-size: 1.5rem;
 	margin: 1rem 0;
+	font-family: 'aptly', sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 #servicios div > div p {
 	font-size: 1rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#clientes {
+	background-color: #249ea0;
+	padding: 3rem 0;
 }
 
 #clientes h1 {
 	text-align: center;
 	font-size: 3rem;
+	margin-bottom: 2rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 #clientLogos {
@@ -205,6 +265,11 @@ main {
 	gap: 3rem;
 }
 
+#testimonials {
+	background-image: url('/assets/images/FONDO2.png');
+	padding: 3rem 0;
+}
+
 .testimonial {
 	display: flex;
 	flex-direction: column;
@@ -213,6 +278,13 @@ main {
 	-webkit-backdrop-filter: blur(8px);
 	border-radius: 3rem;
 	border: 1px solid rgba(28, 28, 28, 0.18);
+}
+
+.testimonies_cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 2rem;
 }
 
 .card {
@@ -226,6 +298,9 @@ main {
 	width: 70%;
 	padding: 1rem;
 	margin: 1rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .testimonial img {
@@ -239,22 +314,26 @@ main {
 	align-self: self-end;
 	text-align: right;
 	padding: 2rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: italic;
 }
 
 #portfolio h1 {
 	text-align: center;
 	font-size: 3rem;
-}
-
-#portfolio h1 {
-	text-align: center;
-	font-size: 3rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 #portfolio h3 {
 	text-align: center;
 	font-size: 2rem;
 	margin-bottom: 2rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 div.portfolioImgs {
@@ -279,6 +358,9 @@ div.portfolioImgs {
 #contacto h1 {
 	text-align: center;
 	font-size: 3rem;
+	font-family: 'aptly-rough', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 #contacto {
@@ -328,6 +410,13 @@ div.portfolioImgs {
 	background-color: #005f60;
 }
 
+form,
+button {
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 footer {
 	background-color: #faab36;
 	color: white;
@@ -337,6 +426,9 @@ footer {
 	align-items: center;
 	padding-top: 2rem;
 	margin-top: 2rem;
+	font-family: 'aptly', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .footerfrst {
@@ -365,8 +457,28 @@ footer .author {
 	width: 3rem;
 }
 
+/*Tabler Style*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.testimonial img {
+		width: 6em;
+	}
+
+	div.portfolioImgs {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footerfrst {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 /* Mobile Style */
-@media only screen and (min-width: 375px) and (max-width: 1038px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
 	.text-content h1 {
 		font-size: 3rem;
 		margin-bottom: 2rem;
@@ -374,6 +486,10 @@ footer .author {
 
 	.text-content p {
 		font-size: 1.5rem;
+	}
+
+	nav ul {
+		display: none;
 	}
 
 	#clientLogos img {
@@ -436,6 +552,19 @@ footer .author {
 		font-size: 1.5rem;
 	}
 
+	nav ul {
+		display: none;
+	}
+
+	.testimonial .card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.testimonial .card img {
+		width: 9rem;
+	}
+
 	#clientLogos img {
 		width: 50vw;
 		max-width: 300px;
@@ -468,6 +597,24 @@ footer .author {
 	#contacto input,
 	#contacto textarea {
 		font-size: 14px;
+	}
+
+	#servicios div > div {
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+		background: rgba(255, 160, 160, 0.3);
+		backdrop-filter: blur(7.5px);
+		-webkit-backdrop-filter: blur(7.5px);
+		border-radius: 0.5rem;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+	}
+
+	footer .container {
+		flex-direction: column;
 	}
 
 	.footerUL {
