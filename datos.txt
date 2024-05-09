@@ -1,0 +1,13 @@
+Alumnos:
+Perotti Maria Cecilia
+Scagni Juan Manuel
+
+Materia: Maquetado Web
+
+Profesor: Rubio Antonio
+
+DMN2AP
+
+https://pixel-media-eight.vercel.app/
+
+https://github.com/manuj90/pixelMedia
